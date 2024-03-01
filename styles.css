@@ -1,0 +1,221 @@
+/* Estilos para el cuerpo del documento HTML */
+body {
+    /* Elimina los márgenes predeterminados del cuerpo */
+    margin: 0;
+    /* Define la fuente utilizada para el texto en el cuerpo */
+    font-family: Arial, sans-serif;
+}
+
+/* Estilos para el contenedor del banner */
+.banner {
+    /* Limita el ancho máximo del banner a 500px */
+    max-width: 500px;
+    /* Centra horizontalmente el banner */
+    margin: 0 auto;
+    /* Agrega un poco de espacio alrededor de la imagen */
+    padding: 10px;
+}
+
+/* Estilos para las imágenes dentro del banner */
+.banner img {
+    /* Ajusta el ancho de la imagen al 100% del contenedor */
+    max-width: 500%;
+    /* Limita la altura máxima de la imagen */
+    max-height: 100px; /* Puedes ajustar este valor según sea necesario */
+    /* Asegura que la imagen se muestre como un bloque */
+    display: block;
+    /* Centra la imagen horizontalmente dentro del banner */
+    margin: 0 auto;
+}
+
+/* Estilos para la barra de navegación */
+nav {
+    /* Establece el color de fondo de la barra de navegación */
+    background-color: #333;
+    /* Oculta el desbordamiento de contenido que exceda el tamaño del contenedor */
+    overflow: hidden;
+    /* Establece el ancho máximo de la barra de navegación */
+    max-width: 2000px;
+    /* Centra la barra de navegación horizontalmente */
+    margin: 0 auto;
+}
+
+/* Estilos para los enlaces en la barra de navegación */
+nav a {
+    /* Alinea los enlaces a la izquierda */
+    float: left;
+    /* Muestra los enlaces como bloques */
+    display: block;
+    /* Establece el color del texto en los enlaces */
+    color: white;
+    /* Centra el texto verticalmente dentro de los enlaces */
+    text-align: center;
+    /* Añade espaciado alrededor del texto en los enlaces */
+    padding: 14px 80px;
+    /* Elimina el subrayado de los enlaces */
+    text-decoration: none;
+}
+
+/* Estilos para los enlaces en la barra de navegación al pasar el mouse sobre ellos */
+nav a:hover {
+    /* Cambia el color de fondo al pasar el mouse sobre los enlaces */
+    background-color: #ddd;
+    /* Cambia el color del texto al pasar el mouse sobre los enlaces */
+    color: black;
+}
+
+/* Estilos para los elementos desplegables en la barra de navegación */
+.dropdown {
+    /* Permite que los elementos desplegables floten a la izquierda */
+    float: left;
+    /* Oculta el desbordamiento de contenido que exceda el tamaño del contenedor */
+    overflow: hidden;
+}
+
+/* Estilos para el botón desplegable en los elementos desplegables */
+.dropdown .dropbtn {
+    /* Establece el tamaño de la fuente del botón desplegable */
+    font-size: 16px;
+    /* Elimina el borde y el resaltado del botón desplegable */
+    border: none;
+    outline: none;
+    /* Establece el color del texto en el botón desplegable */
+    color: rgb(255, 255, 255);
+    /* Añade espaciado alrededor del texto en el botón desplegable */
+    padding: 14px 20px;
+    /* Utiliza el color de fondo heredado */
+    background-color: inherit;
+    /* Utiliza la familia de fuentes heredada */
+    font-family: inherit;
+    /* Elimina el margen en el botón desplegable */
+    margin: 0;
+}
+
+/* Estilos para el contenido desplegable en los elementos desplegables */
+.dropdown-content {
+    /* Oculta inicialmente el contenido desplegable */
+    display: none;
+    /* Establece la posición del contenido desplegable */
+    position: absolute;
+    /* Establece el color de fondo del contenido desplegable */
+    background-color: #f9f9f9;
+    /* Establece el ancho mínimo del contenido desplegable */
+    min-width: 160px;
+    /* Establece la superposición del contenido desplegable */
+    z-index: 1;
+}
+
+/* Estilos para los enlaces dentro del contenido desplegable */
+.dropdown-content a {
+    /* Elimina el flotado de los enlaces dentro del contenido desplegable */
+    float: none;
+    /* Establece el color del texto en los enlaces dentro del contenido desplegable */
+    color: black;
+    /* Añade espaciado alrededor del texto en los enlaces dentro del contenido desplegable */
+    padding: 12px 16px;
+    /* Elimina el subrayado de los enlaces dentro del contenido desplegable */
+    text-decoration: none;
+    /* Muestra los enlaces como bloques dentro del contenido desplegable */
+    display: block;
+    /* Alinea el texto a la izquierda dentro de los enlaces dentro del contenido desplegable */
+    text-align: left;
+}
+
+/* Estilos para los enlaces dentro del contenido desplegable al pasar el mouse sobre ellos */
+.dropdown-content a:hover {
+    /* Cambia el color de fondo al pasar el mouse sobre los enlaces dentro del contenido desplegable */
+    background-color: #ddd;
+}
+
+/* Muestra el contenido desplegable cuando se pasa el mouse sobre los elementos desplegables */
+.dropdown:hover .dropdown-content {
+    /* Muestra el contenido desplegable */
+    display: block;
+}
+
+/* Estilos para los sub-elementos desplegables */
+.sub-dropdown {
+    /* Elimina el flotado de los sub-elementos desplegables */
+    float: none;
+    /* Oculta el desbordamiento de contenido que exceda el tamaño del contenedor */
+    overflow: hidden;
+}
+
+/* Estilos para los botones en los sub-elementos desplegables */
+.sub-dropbtn {
+    /* Establece el tamaño de la fuente de los botones en los sub-elementos desplegables */
+    font-size: 16px;
+    /* Elimina el borde y el resaltado de los botones en los sub-elementos desplegables */
+    border: none;
+    outline: none;
+    /* Establece el color del texto de los botones en los sub-elementos desplegables */
+    color: rgb(0, 0, 0);
+    /* Utiliza el color de fondo heredado para los botones en los sub-elementos desplegables */
+    background-color: inherit;
+    /* Utiliza la familia de fuentes heredada para los botones en los sub-elementos desplegables */
+    font-family: inherit;
+    /* Elimina el margen de los botones en los sub-elementos desplegables */
+    margin: 0;
+}
+
+/* Estilos para el contenido desplegable en los sub-elementos desplegables */
+.sub-dropdown-content {
+    /* Oculta inicialmente el contenido desplegable de los sub-elementos desplegables */
+    display: none;
+    /* Establece la posición del contenido desplegable de los sub-elementos desplegables */
+    position: absolute;
+    /* Establece el color de fondo del contenido desplegable de los sub-elementos desplegables */
+    background-color: #f9f9f9;
+    /* Establece el ancho mínimo del contenido desplegable de los sub-elementos desplegables */
+    min-width: 160px;
+    /* Establece la posición del contenido desplegable de los sub-elementos desplegables */
+    left: 100%;
+    top: 0;
+    /* Establece la superposición del contenido desplegable de los sub-elementos desplegables */
+    z-index: 1;
+}
+
+/* Estilos para los enlaces dentro del contenido desplegable de los sub-elementos desplegables */
+.sub-dropdown-content a {
+    /* Elimina el flotado de los enlaces dentro del contenido desplegable de los sub-elementos desplegables */
+    float: none;
+    /* Establece el color del texto en los enlaces dentro del contenido desplegable de los sub-elementos desplegables */
+    color: black;
+    /* Añade espaciado alrededor del texto en los enlaces dentro del contenido desplegable de los sub-elementos desplegables */
+    padding: 12px 16px;
+    /* Elimina el subrayado de los enlaces dentro del contenido desplegable de los sub-elementos desplegables */
+    text-decoration: none;
+    /* Muestra los enlaces como bloques dentro del contenido desplegable de los sub-elementos desplegables */
+    display: block;
+    /* Alinea el texto a la izquierda dentro de los enlaces dentro del contenido desplegable de los sub-elementos desplegables */
+    text-align: left;
+}
+
+/* Estilos para los enlaces dentro del contenido desplegable de los sub-elementos desplegables al pasar el mouse sobre ellos */
+.sub-dropdown-content a:hover {
+    /* Cambia el color de fondo al pasar el mouse sobre los enlaces dentro del contenido desplegable de los sub-elementos desplegables */
+    background-color: #ddd;
+}
+
+/* Muestra el contenido desplegable de los sub-elementos desplegables cuando se pasa el mouse sobre ellos */
+.sub-dropdown:hover .sub-dropdown-content {
+    /* Muestra el contenido desplegable de los sub-elementos desplegables */
+    display: block;
+}
+
+/* Estilos para los enlaces en la barra de navegación al pasar el mouse sobre ellos */
+nav a:hover {
+    /* Cambia el color de fondo al azul al pasar el mouse sobre los enlaces en la barra de navegación */
+    background-color: #007bff;
+    /* Cambia el color del texto a blanco al pasar el mouse sobre los enlaces en la barra de navegación */
+    color: white;
+}
+
+/* Estilos para los enlaces dentro del contenido desplegable de los elementos desplegables y los sub-elementos desplegables al pasar el mouse sobre ellos */
+.dropdown-content a:hover,
+.sub-dropdown-content a:hover {
+    /* Cambia el color de fondo al azul al pasar el mouse sobre los enlaces dentro del contenido desplegable de los elementos desplegables y los sub-elementos desplegables */
+    background-color: #007bff;
+    /* Cambia el color del texto a blanco al pasar el mouse sobre los enlaces dentro del contenido desplegable de los elementos desplegables y los sub-elementos desplegables */
+    color: white;
+}
